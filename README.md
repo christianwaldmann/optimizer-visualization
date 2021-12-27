@@ -10,38 +10,7 @@ All optimizers use the gradient for calculating their next step. In this simulat
 
 The optimizers use the following formulas to calculate their next step:
 
-### SGD
-
-$$v = \alpha \cdot \nabla E(w)$$
-$$w = w - v$$
-
-### SGD Momentum
-
-$$v = \beta \cdot v + \alpha \cdot \nabla E(w)$$
-$$w = w - v$$
-
-### Nesterov Momentum
-
-$$v = \beta \cdot v + \alpha \cdot \nabla E(w - \beta \cdot v)$$
-$$w = w - v$$
-
-### AdaGrad
-
-$$s = s + \nabla E(w) \otimes \nabla E(w)$$
-$$w = w - \alpha \cdot \nabla E(w) \oslash \sqrt{s + \epsilon}$$
-
-### RMSProp
-
-$$s = \beta \cdot s + (1 - \beta) \cdot \nabla E(w) \otimes \nabla E(w)$$
-$$w = w - \alpha \cdot \nabla E(w) \oslash \sqrt{s + \epsilon}$$
-
-### Adam
-
-$$v = \beta_1 \cdot v + (1 - \beta_1) \cdot \nabla E(w)$$
-$$s = \beta_2 \cdot s + (1 - \beta_2) \cdot \nabla E(w) \otimes \nabla E(w)$$
-$$\hat v = \frac{v}{1 - \beta_1^t}$$
-$$\hat s = \frac{s}{1 - \beta_2^t}$$
-$$w = w - \alpha \cdot \hat v \oslash \sqrt{\hat s + \epsilon}$$
+![](optimizer_formulas.jpg)
 
 ## Scenes
 
