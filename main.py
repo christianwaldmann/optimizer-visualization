@@ -24,10 +24,10 @@ import matplotlib.pyplot as plt
 
 # Parameters
 nSteps = 750
-visualisation = "2D"  # '2D' or '3D'
+visualisation = "3D"  # '2D' or '3D'
 animationspeed = 5
 epsilon = 1e-8
-createPngsForGif = True  # Clears /tmp first and then saves every frame of the animation as .png in /tmp until the script is stopped
+createPngsForGif = False  # Clears /tmp first and then saves every frame of the animation as .png in /tmp until the script is stopped
 
 
 # Initialize simulation and load scene
